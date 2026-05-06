@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="关于我｜平面设计作品集" />
+    <title>About me · ZhouTing.Space</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-accent="#B7FF5A" data-cursor-stage="1">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__core"></div>
+      <img class="cursor__avatar is-apple" src="./assets/cursor-apple-0.svg" alt="" />
+      <div class="cursor__label"></div>
+    </div>
+
+    <main class="aboutPage wrap">
+      <aside class="aboutNav" aria-label="Navigation">
+        <a class="aboutNav__brand" href="./index.html" data-cursor="Home">ZhouTing.Space</a>
+        <nav class="aboutNav__links">
+          <a class="is-active" href="./about.html" data-cursor="About">About me</a>
+          <a href="./projects.html" data-transition="wipe" data-accent="#B7FF5A" data-cursor="Project">Project</a>
+          <a href="./photo.html" data-transition="pulse" data-accent="#7C6CFF" data-cursor="Photo">photography</a>
+        </nav>
+      </aside>
+
+      <section class="aboutStage" aria-label="About content">
+        <div class="aboutGrid">
+          <div class="aboutPhoto" data-cursor="Smile">
+            <div class="aboutPhoto__frame" aria-label="Portrait">
+              <img class="aboutPhoto__img is-base" src="./assets/projects/about-plain.png" alt="Portrait" draggable="false" />
+              <img class="aboutPhoto__img is-hover" src="./assets/projects/about-smile.png" alt="" aria-hidden="true" draggable="false" />
+            </div>
+          </div>
+
+          <div class="aboutInfo">
+            <div class="aboutInfo__hello">Hi , :)</div>
+            <div class="aboutInfo__here">Here is</div>
+            <div class="aboutInfo__cn">周婷</div>
+            <div class="aboutInfo__name">Judy</div>
+
+            <div class="aboutInfo__meta">
+              <div>Infj</div>
+              <div><b>graphic designer</b> x <b>shutterbug</b></div>
+            </div>
+
+            <div class="aboutInfo__contact">
+              <div>📞 Phone: 18115297189</div>
+              <div>✉️ Email: zhouting7@xiaohongshu.com</div>
+              <div>📍 Address: 3rd Floor, Building E, SOHO Fuxing Plaza, Shanghai</div>
+            </div>
+
+            <div class="aboutInfo__line"></div>
+
+            <div class="aboutInfo__note">
+              (Please email for any work inquiries. Thanks :)<br />
+              I'm always eager to collaborate on exciting design projects and innovative visual concepts.<br />
+              Whether it's branding, digital design, or print, I'm here to bring creative ideas to life!)<br /><br />
+              "I believe design should be a bridge between creativity and functionality."
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="transition" aria-hidden="true">
+      <div class="transition__layer"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

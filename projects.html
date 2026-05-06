@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects · ZhouTing.Space" />
+    <title>Projects · ZhouTing.Space</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-accent="#B7FF5A" data-cursor-stage="2">
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__core"></div>
+      <img class="cursor__avatar is-apple" src="./assets/cursor-apple-0.svg" alt="" />
+      <div class="cursor__label"></div>
+    </div>
+
+    <main class="dock wrap">
+      <aside class="dock__nav">
+        <div class="dock__brand">
+          <a href="./index.html" data-cursor="Home" class="dock__title">ZhouTing.Space</a>
+        </div>
+
+        <nav class="dock__links" aria-label="Site">
+          <a href="./about.html" data-transition="wipe" data-accent="#FFB86B" data-cursor="About">About me</a>
+
+          <div class="dock__group">
+            <a href="./projects.html" class="is-active" data-cursor="Project">Project</a>
+            <div class="dock__list" aria-label="Project list">
+              <a href="./project-preview.html" data-transition="wipe" data-accent="#B7FF5A" data-cursor="Open"
+                >1. What is Buddha？</a
+              >
+              <a href="./empty-house-preview.html" data-transition="shard" data-accent="#7C6CFF" data-cursor="Open"
+                >2. Empty House</a
+              >
+              <a href="./fluid-preview.html" data-transition="iris" data-accent="#FF4BD8" data-cursor="Open"
+                >3. The Fluid 1.5㎡</a
+              >
+              <a href="./green-ocean-preview.html" data-transition="pulse" data-accent="#FFB86B" data-cursor="Open"
+                >4. Green Ocean</a
+              >
+            </div>
+          </div>
+
+          <a href="./photo.html" data-transition="pulse" data-accent="#7C6CFF" data-cursor="Photo">photography</a>
+        </nav>
+      </aside>
+
+      <section class="dock__stage" aria-label="Project icons">
+        <div class="iconRow">
+          <a class="iconBtn iconBtn--buddha" href="./project-preview.html" data-transition="wipe" data-accent="#B7FF5A" data-cursor="Buddha">
+            <img src="./assets/projects/icon-buddha.png" alt="Buddha icon" />
+          </a>
+
+          <a class="iconBtn iconBtn--cone" href="./fluid-preview.html" data-transition="iris" data-accent="#FF4BD8" data-cursor="Cone">
+            <img src="./assets/projects/icon-cone.png" alt="Cone icon" />
+          </a>
+
+          <a class="iconBtn iconBtn--stair" href="./empty-house-preview.html" data-transition="shard" data-accent="#7C6CFF" data-cursor="Stair">
+            <img src="./assets/projects/icon-stair.png" alt="Stair icon" />
+          </a>
+
+          <a class="iconBtn iconBtn--sign" href="./green-ocean-preview.html" data-transition="pulse" data-accent="#FFB86B" data-cursor="Enter">
+            <img class="iconBtn__base" src="./assets/projects/icon-sign.png" alt="Sign icon" />
+            <img class="iconBtn__alt" src="./assets/projects/icon-sign-enter.png" alt="" aria-hidden="true" />
+          </a>
+        </div>
+
+        <div class="dock__note">
+          Hover icons to animate. Click to jump to each project.
+        </div>
+      </section>
+    </main>
+
+    <div class="transition" aria-hidden="true">
+      <div class="transition__layer"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="封面 · 个人作品集" />
+    <title>Cover · Portfolio</title>
+    <link rel="preload" href="./assets/avatar.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="is-cover" data-accent="#FF4BD8">
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__core"></div>
+      <img class="cursor__avatar is-apple" src="./assets/cursor-apple-0.svg" alt="" />
+      <div class="cursor__label"></div>
+    </div>
+
+    <main class="cover wrap">
+      <div class="cover__grid">
+        <section class="cover__left">
+          <p class="cover__kicker">PORTFOLIO / 2026</p>
+          <h1 class="cover__title">
+            你的名字
+            <span class="cover__title2">Graphic / Visual</span>
+          </h1>
+          <p class="cover__desc">
+            四个项目，四个荒诞物件。你可以拖动它们随意叠放，点一下就进入对应项目。
+          </p>
+
+          <div class="cover__actions">
+            <a class="btn btn--ghost" href="mailto:you@email.com" data-cursor="Email">Email</a>
+            <button class="btn btn--enter" type="button" data-reset-stickers="1" data-cursor="Reset">Reset</button>
+          </div>
+
+          <div class="cover__meta">
+            <span class="tag">Drag</span>
+            <span class="tag">Click to enter</span>
+            <span class="tag">Collage</span>
+          </div>
+        </section>
+
+        <section class="cover__right" aria-label="Project stickers">
+          <div class="stickerStage" data-sticker-stage="1">
+            <a
+              class="sticker s1"
+              href="./work/project-01.html"
+              data-transition="wipe"
+              data-accent="#B7FF5A"
+              data-enter="1"
+              data-cursor="What is Buddha"
+              aria-label="What is Buddha"
+              style="--x:18%; --y:8%; --r:-6deg; --w: 320px;"
+            >
+              <img class="sticker__img" src="./assets/projects/buddha.png" alt="Buddha head" draggable="false" />
+              <span class="sticker__cap">What is Buddha</span>
+            </a>
+
+            <a
+              class="sticker s2"
+              href="./work/project-02.html"
+              data-transition="shard"
+              data-accent="#7C6CFF"
+              data-enter="1"
+              data-cursor="Empty House"
+              aria-label="Empty House"
+              style="--x:56%; --y:16%; --r:7deg; --w: 360px;"
+            >
+              <img class="sticker__img" src="./assets/projects/house.png" alt="House" draggable="false" />
+              <span class="sticker__cap">Empty House</span>
+            </a>
+
+            <a
+              class="sticker s3"
+              href="./work/project-03.html"
+              data-transition="iris"
+              data-accent="#FF4BD8"
+              data-enter="1"
+              data-cursor="Plastic Chair"
+              aria-label="Plastic Chair"
+              style="--x:40%; --y:56%; --r:-12deg; --w: 280px;"
+            >
+              <img class="sticker__img" src="./assets/projects/chair.png" alt="Chair" draggable="false" />
+              <span class="sticker__cap">Plastic Chair</span>
+            </a>
+
+            <a
+              class="sticker s4"
+              href="./work/project-04.html"
+              data-transition="pulse"
+              data-accent="#FFB86B"
+              data-enter="1"
+              data-cursor="Green Fence"
+              aria-label="Green Fence"
+              style="--x:10%; --y:64%; --r:10deg; --w: 380px;"
+            >
+              <img class="sticker__img" src="./assets/projects/fence.png" alt="Green fence" draggable="false" />
+              <span class="sticker__cap">Green Fence</span>
+            </a>
+
+            <img class="stickerStage__tape t1" src="./assets/tape.svg" alt="" aria-hidden="true" />
+            <img class="stickerStage__tape t2" src="./assets/tape.svg" alt="" aria-hidden="true" />
+            <img class="stickerStage__doodle d1" src="./assets/doodle-star.svg" alt="" aria-hidden="true" />
+          </div>
+          <p class="stickerHint">Tip: Drag to rearrange. Click to open.</p>
+        </section>
+      </div>
+
+      <footer class="cover__foot">
+        <span class="cover__footLeft">© <span data-year></span> 你的名字</span>
+        <span class="cover__footRight">absurd, but precise.</span>
+      </footer>
+    </main>
+
+    <div class="transition" aria-hidden="true">
+      <div class="transition__layer"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

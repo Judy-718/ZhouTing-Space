@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photography · ZhouTing.Space" />
+    <title>Photography · ZhouTing.Space</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-accent="#7C6CFF" data-cursor-stage="2">
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__core"></div>
+      <img class="cursor__avatar is-apple" src="./assets/cursor-apple-0.svg" alt="" />
+      <div class="cursor__label"></div>
+    </div>
+
+    <main class="dock wrap">
+      <aside class="dock__nav">
+        <div class="dock__brand">
+          <a class="dock__title" href="./index.html" data-cursor="Home">ZhouTing.Space</a>
+        </div>
+
+        <nav class="dock__links" aria-label="Site">
+          <a href="./about.html" data-transition="wipe" data-accent="#FFB86B" data-cursor="About">About me</a>
+          <a href="./projects.html" data-transition="wipe" data-accent="#B7FF5A" data-cursor="Project">Project</a>
+          <a href="./photo.html" class="is-active" data-cursor="Photo">photography</a>
+        </nav>
+      </aside>
+
+      <section class="dock__stage" aria-label="Photography">
+        <div class="dock__note">Click any photo to zoom.</div>
+
+        <section
+          class="photoGrid"
+          aria-label="Photography grid"
+          data-lightbox-grid="1"
+          data-folder="./assets/projects/photo/"
+          data-count="12"
+        >
+          <!-- JS will populate thumbnails -->
+        </section>
+      </section>
+    </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox__close" type="button" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__prev" type="button" aria-label="Previous">‹</button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" alt="" />
+      </figure>
+      <button class="lightbox__nav lightbox__next" type="button" aria-label="Next">›</button>
+      <div class="lightbox__hint">ESC to close · ← → to navigate</div>
+    </div>
+
+    <div class="transition" aria-hidden="true">
+      <div class="transition__layer"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
