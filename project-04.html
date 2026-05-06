@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Green Ocean · Portfolio" />
+    <title>Green Ocean · Portfolio</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-accent="#FFB86B" data-cursor-stage="2">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__core"></div>
+      <img class="cursor__avatar is-apple" src="../assets/cursor-apple-0.svg" alt="" />
+      <div class="cursor__label"></div>
+    </div>
+
+    <header class="top">
+      <a class="brand" href="../" data-transition="pulse" data-accent="#FFB86B" data-cursor="Home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">你的名字</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="../#work" data-transition="pulse" data-accent="#FFB86B" data-cursor="Work">Work</a>
+        <a class="nav__link" href="../about.html" data-transition="wipe" data-accent="#7C6CFF" data-cursor="About"
+          >About</a
+        >
+        <a class="nav__link" href="mailto:you@email.com" data-cursor="Email">Email</a>
+      </nav>
+    </header>
+
+    <main class="wrap project">
+      <section class="project__head">
+        <h1 class="project__title">Green Ocean</h1>
+        <div class="project__hint">ocean / boundary / rules</div>
+      </section>
+
+      <p class="project__text">
+        字体/标志类项目，推荐用“对比”叙事：起点（问题）→ 规则（系统）→ 结果（落地）。文字只写规则，图片负责说服。
+      </p>
+
+      <section class="project__grid" aria-label="Gallery">
+        <div class="shot span-6" data-label="Mark"></div>
+        <div class="shot span-6" data-label="Grid"></div>
+        <div class="shot span-12" data-label="Hero"></div>
+        <div class="shot span-4" data-label="Type A"></div>
+        <div class="shot span-4" data-label="Type B"></div>
+        <div class="shot span-4" data-label="Type C"></div>
+      </section>
+
+      <footer class="foot">
+        <div class="foot__left">
+          <span class="foot__tag">© <span data-year></span> 你的名字</span>
+        </div>
+        <div class="foot__right">
+          <a class="foot__link" href="../" data-transition="iris" data-accent="#B7FF5A" data-cursor="Home">Home</a>
+        </div>
+      </footer>
+    </main>
+
+    <div class="transition" aria-hidden="true">
+      <div class="transition__layer"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <script src="../app.js" defer></script>
+  </body>
+</html>

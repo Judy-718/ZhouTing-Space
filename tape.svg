@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="140" viewBox="0 0 420 140" fill="none">
+  <defs>
+    <filter id="r" x="-20%" y="-40%" width="140%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="8"/>
+      <feDisplacementMap in="SourceGraphic" scale="6"/>
+    </filter>
+    <linearGradient id="g" x1="0" y1="0" x2="420" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8d7" stop-opacity=".9"/>
+      <stop offset=".55" stop-color="#fff0b8" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#ffe89a" stop-opacity=".86"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#r)">
+    <path d="M16 34c68-16 122-18 190-10 70 8 114 7 198-10 10-2 20 6 20 16v50c0 10-10 18-20 16-82-17-128-18-198-10-68 8-122 6-190-10-10-2-20 6-20 16V50c0-10 10-18 20-16Z" fill="url(#g)"/>
+    <path d="M18 46c72-12 126-13 186-6 72 9 124 8 200-8" stroke="#3b2f1f" stroke-opacity=".18" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18 92c72 12 126 13 186 6 72-9 124-8 200 8" stroke="#3b2f1f" stroke-opacity=".12" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
